@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">公交车追踪</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="xianlu">线路名称</string>
+    <string name="xianlu_num">请输入公交线路</string>
+    <string name="shang_or_xia">行驶方向</string>
+    <string name="gps">GPS候车查询</string>
+    <string name="query_xianlu">查询</string>
+    <string name="houche">候车站点</string>
+    <string name="info">站点信息</string>
+    <string name="leave">开往方向：</string>
+    <string name="wait">候车站点：</string>
+    <string name="bus_info">候车信息</string>
+
+    <string-array name="shang_xia">
+        <item>请输入线路名称</item>
+    </string-array>
+
+</resources>

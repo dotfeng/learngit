@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/more_login_background" >
+
+    <!-- include top  style xml -->
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/home_top_item" />
+    <!-- top  以下的所有布局 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/list_back_pic"
+            android:paddingBottom="30dp" >
+
+            <TextView
+                android:id="@+id/tv_xianlu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/xianlu"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/xianlu_num"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="18dp"
+                android:layout_toRightOf="@+id/tv_xianlu"
+                android:background="@drawable/shape"
+                android:drawableLeft="@drawable/seach_left"
+                android:ems="10"
+                android:hint="@string/xianlu_num"
+                android:paddingLeft="5dp" >
+            </EditText>
+            <!-- 线路输入结束 -->
+
+            <Button
+                android:id="@+id/query_xianlu"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/xianlu_num"
+                android:layout_below="@id/xianlu_num"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_selected"
+                android:text="@string/query_xianlu" />
+            <!-- 查询线路结束 -->
+
+            <TextView
+                android:id="@+id/tv_shang_or_xia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/tv_xianlu"
+                android:layout_below="@+id/query_xianlu"
+                android:layout_marginTop="17dp"
+                android:text="@string/shang_or_xia"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/s_x"
+                android:layout_width="205dp"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/xianlu_num"
+                android:layout_alignTop="@+id/tv_shang_or_xia"
+                android:background="@drawable/shape"
+                android:entries="@array/shang_xia"
+                android:paddingLeft="5dp" />
+            <!-- 行驶方向结束 -->
+
+            <TextView
+                android:id="@+id/tv_houche"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/tv_xianlu"
+                android:layout_below="@+id/tv_shang_or_xia"
+                android:layout_marginTop="17dp"
+                android:text="@string/houche"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/houche_str"
+                android:layout_width="205dp"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/xianlu_num"
+                android:layout_alignTop="@+id/tv_houche"
+                android:background="@drawable/shape"
+                android:entries="@array/shang_xia"
+                android:paddingLeft="5dp" />
+            <!-- 候车站点结束 -->
+
+        </RelativeLayout>
+        <!-- 查询条件结束 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/relativeLayout1"
+            android:layout_margin="6dp"
+            android:background="@drawable/list_back_pic" >
+
+            <ListView
+                android:id="@+id/lv_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:entries="@array/shang_xia"
+                android:cacheColorHint="#00000000" >
+            </ListView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
