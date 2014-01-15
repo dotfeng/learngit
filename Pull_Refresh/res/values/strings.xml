@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">仿网易新闻自动下拉刷新/加载更多_增强版</string>
+
+    <string name="about_open_source">开源不是义务，而是一种态度！</string>
+    <string name="about_my_hope">希望小伙伴们能够贡献自己的智慧和力量，分享给他人，俺一直坚信开源的力量~</string>
+    <string name="like_netease_layout">完全模仿网易新闻的效果增强版</string>
+    <string name="single_layout">单个Layout | 进入界面马上刷新</string>
+    <string name="same_and_diff">与网易新闻自动刷新效果异同点</string>
+    <string name="contact_advice">联系和建议：\n\tQQ : 503548433\n\tEmail : xxzhaofeng5412@gmail.com</string>
+    
+    <string name="about_same_point">相同点：\n\n1.第一次进入主界面，全部的listview都要检查是否有更新。\n2.当关闭屏幕(直接按Power键，其实就是当前Activity的屏幕失去焦点)再次打开屏幕的时候，也就是onWindowFocusChanged时，检查是否可以自动刷新。</string>
+    <string name="about_diff_point">不同点：\n\n1.网易新闻是每隔30分钟更新一次。（亲测）而且如果你不关闭屏幕或者退出应用，它是无法自动刷新的。\n2.我的DEMO还可以直接启动检测的线程，自动帮我们检测，是否达到自动刷新条件。（它的功能也都有）</string>
+    
+    <string name="btn_state_title">按钮显示文字表示当前ListView的设置状态</string>
+    
+    <string name="p2refresh_head_load_more">加载更多</string>
+    <string name="p2refresh_end_load_more">更    多</string>
+    <string name="p2refresh_end_click_load_more">点击加载</string>
+    <string name="p2refresh_release_refresh">松开刷新</string>
+    <string name="p2refresh_pull_to_refresh">下拉刷新</string>
+    <string name="p2refresh_doing_head_refresh">正在刷新&#8230;</string>
+    <string name="p2refresh_doing_end_refresh">加载中&#8230;</string>
+    <string name="p2refresh_refresh_lasttime">最近更新&#160;&#058;&#160;</string>
+    <string name="image_desc">图片</string>
+    
+    <string name="ver">版本: v1.0.0</string>
+    <string name="size">大小: 13MB</string>
+    <string name="mgr">管理</string>
+    <string name="name">应用Demo</string>
+
+</resources>
